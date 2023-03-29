@@ -1,0 +1,36 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<body>
+    <h2>Update the medicine</h2>
+    <form method="POST" action="/medicine/update/<%= medicine.id %>">
+						<div class="mb-3">
+							<label>Title</label>
+							<input type="text" name="title" class="form-control" placeholder="<%= medicine.title %>" />
+						</div>
+						<div class="mb-3">
+							<label>Dosage Form</label>
+							<input type="text" name="dosage_form" class="form-control" placeholder="<%= medicine.dosage_form %>" />
+						</div>
+						<div class="mb-3">
+		                	<label>ATX CODE</label>
+		                	<input type="text" name="atx_code"  class="form-control" placeholder="<%= medicine.atx_code %>" />
+		                </div>
+                        <div class="mb-3">
+		                	<label>Producer</label>
+		                	<input type="text" name="producer" class="form-control" placeholder="<%= medicine.producer %>" />
+		                </div>
+                        <div class="mb-3">
+		                	<label>Produced data</label>
+		                	<input type="date" name="produced_data" class="form-control" placeholder="<%= medicine.produced_data %>" />
+		                </div>
+                        <div class="mb-3">
+		                	<label>In stock?</label>
+		                	<input type="text" name="in_stock" class="form-control"  placeholder="yes or no" placeholder="<%= medicine.in_stock %>" />
+		                </div>
+		                <div class="mb-3">
+		                	<input type="submit" name="submit_button" class="btn btn-primary" value="Update" %>/>
+		                </div>
+</form>
+</div>
+</div>
+</body>

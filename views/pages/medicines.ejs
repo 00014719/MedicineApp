@@ -1,0 +1,44 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<body>
+  
+    <ul>
+        <% data.forEach((medicine)=> { %>
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://picsum.photos/500/300" class="card-img-top" alt="...">
+                    <div class="card-body" style="height: 180px;">
+                      <h5 class="card-title" style="color: green;"><%= medicine.title %></h5>
+                      <p class="card-text">DOSAGE FORM: <%= medicine.dosage_form %></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">ATX CODE: <%= medicine.atx_code %></li>
+                      <li class="list-group-item">IN STOCK: <%= medicine.in_stock %></li>
+                      <li class="list-group-item">PRODUCED DATE: <%= medicine.produced_data %></li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="/medicine/<%= medicine.id %>" class="card-link">View more...</a>
+                    </div>
+                  </div>
+                  
+            </li>
+        <% }) %>
+    </ul>
+</body>
+
+<style>
+
+  body {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  ul {
+    margin: 0 auto;
+  }
+    li {
+        float: left;
+        margin: 10px 15px;
+        list-style: none;
+    }
+</style>
+

@@ -1,0 +1,23 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<body>
+    
+<div class="card" style="width: 28rem;">
+    <img src="https://picsum.photos/1200/500" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><%= medicine.title %></h5>
+      <p class="card-text"><%= medicine.dosage_form %></p>
+      <p class="card-text"><%= medicine.atx_code %></p>
+      <p class="card-text"><%= medicine.producer %></p>
+      <p class="card-text"><%= medicine.in_stock %></p>
+      <p class="card-text"><%= medicine.produced_data %></p>
+      <a href="/medicine/update/<%= medicine.id %>" class="btn btn-primary">Update medicine</a>
+      <form method="POST" action="/medicine/delete/<%- medicine.id %>?_method=DELETE">
+        <input type="hidden" name="_method" value="delete">
+       <button type="submit">
+        <a class="btn btn-danger">Delete medicine</a>
+      </button> 
+      </form>
+    </div>
+  </div>
+</body>
