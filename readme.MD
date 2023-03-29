@@ -29,4 +29,4 @@ npm start (as it is used nodemon to run server.js file which automates edited co
 ## Link to github repo
 https://github.com/00014719/MedicineApp.git
 
-### Link to hosted application on Glitch
+### Hosted App
