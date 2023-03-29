@@ -5,7 +5,7 @@ Medicine Registry Application is used for to store remedies in store. It has 4 m
 #### Intsructions
 1. Download the source code
 ```bash 
-git clone https://github.com/
+git clone https://github.com/00014719/MedicineApp.git
 ```
 
 2. Install dependencies
@@ -27,6 +27,6 @@ npm start (as it is used nodemon to run server.js file which automates edited co
 
 
 ## Link to github repo
-
+https://github.com/00014719/MedicineApp.git
 
 ### Link to hosted application on Glitch
